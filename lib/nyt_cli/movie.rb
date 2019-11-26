@@ -1,0 +1,2 @@
+class Nyt::Movie
+end

@@ -1,0 +1,2 @@
+class Nyt::API 
+end
