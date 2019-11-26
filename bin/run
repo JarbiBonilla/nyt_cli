@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require_relative '../lib/nyt_cli'
+require_relative '../lib/nyt_cli.rb'
 
-Nyt::CLI.new.call
+NytCli::CLI.new.call

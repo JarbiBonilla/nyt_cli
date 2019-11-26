@@ -1,2 +1,2 @@
-class Nyt::API 
+class NytCli::API 
 end

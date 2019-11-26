@@ -1,2 +1,2 @@
-class Nyt::Movie
+class NytCli::Movie
 end

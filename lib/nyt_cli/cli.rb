@@ -1,4 +1,4 @@
-class Nyt::CLI 
+class NytCli::CLI 
   
   def call 
     puts "hello world"
