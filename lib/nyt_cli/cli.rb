@@ -36,8 +36,8 @@ class NytCli::CLI
       puts "Type in a number to get details of a specific movie."
       input = gets.strip.downcase
       if input.to_i > 0 
-        #movie_details method goes here.
-      elsif input == "exit"
+        movie_details
+      else input == "exit"
         puts "bye!"
       end 
     end 
@@ -49,7 +49,7 @@ class NytCli::CLI
       puts "Critic: #{movie.critic}."
       puts "Short Summary of movie: #{movie.summary}."
       puts "Movie link #{movie.link}"
-      puts "Opening date #{movie.opening_date}"
+      puts "Opening date: #{movie.opening_date}"
     end 
   end 
 end
