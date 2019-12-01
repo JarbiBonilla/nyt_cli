@@ -14,6 +14,8 @@ class NytCli::CLI
   
   def list 
     NytCli::API.new.fetch
+      puts "\n Here are the list of movies!"
+      sleep(1)
     NytCli::Movie.all.each.with_index(1) do |movie, i|
       puts "#{i}. #{movie.title}."
     end 
