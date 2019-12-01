@@ -20,4 +20,23 @@ class NytCli::CLI
       puts "#{i}. #{movie.title}."
     end 
   end 
+  
+  #need movie details method for second level.
+  #menu method.
+  
+  def menu
+    
+    input = nil 
+    
+    while input != nil 
+      puts "Type in a number to get details of a specific movie."
+      if input.to_i > 0 
+        #movie_details method goes here.
+      elsif input = "exit"
+        puts "bye!"
+      end 
+    end 
+  end 
+  
+  
 end
