@@ -33,24 +33,25 @@ class NytCli::CLI
     
     input = nil 
     
-    while input != nil 
+    while input != "exit"
       puts "Type in a number to get details of a specific movie."
       input = gets.strip.downcase
       if input.to_i > 0 
-        movie_details
+        movie_details(input)
       else input == "exit"
         puts "bye!"
       end 
     end 
   end 
   
-  def movie_details
-    NytCli::Movie.all.each do |movie|
+  def movie_details(input)
+    movie = NytCli::Movie.all[input - 1]
+    #NytCli::Movie.all.each do |movie|
       puts "Title: #{movie.title}."
       puts "Critic: #{movie.critic}."
       puts "Short Summary of movie: #{movie.summary}."
       puts "Movie link #{movie.link}"
       puts "Opening date: #{movie.opening_date}"
-    end 
+    #end 
   end 
 end
