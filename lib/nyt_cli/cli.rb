@@ -44,7 +44,12 @@ class NytCli::CLI
   end 
   
   def movie_details
-    NytCli::Movie 
-  
-  
+    NytCli::Movie.all.each do |movie|
+      puts "Title: #{movie.title}."
+      puts "Critic: #{movie.critic}."
+      puts "Short Summary of movie: #{movie.summary}."
+      puts "Movie link #{movie.link}"
+      puts "Opening date #{movie.opening_date}"
+    end 
+  end 
 end
