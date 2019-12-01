@@ -8,7 +8,7 @@ class NytCli::CLI
     if input == "y"
       list 
     elsif input == "n"
-      puts "see you later!"
+      bye
     else 
       puts "This is not a valid option. Please choice one of the options."
       sleep(1)
@@ -33,14 +33,16 @@ class NytCli::CLI
     
     input = nil 
     
-    while input != ""
-      puts "Type in a number to get details of a specific movie or type list to see the movies again."
+    while input != "exit"
+      puts "Type in a number to get details of a specific movie."
+      puts "Type list to see the list of movies."
+      puts "Type exit to leave the program."
       input = gets.strip.downcase
       if input.to_i > 0 
         movie_details(input)
       elsif input == "list"
         list
-      else input == "exit"
+      elsif input == "exit"
         bye
       end 
     end 
