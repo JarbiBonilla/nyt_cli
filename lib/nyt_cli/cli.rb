@@ -43,5 +43,8 @@ class NytCli::CLI
     end 
   end 
   
+  def movie_details
+    NytCli::Movie 
+  
   
 end
