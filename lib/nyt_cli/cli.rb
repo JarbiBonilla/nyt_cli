@@ -8,7 +8,7 @@ class NytCli::CLI
     if input == "y"
       list 
     elsif input == "n"
-      #menu method would go here 
+      menu
     end 
   end 
   
@@ -32,7 +32,7 @@ class NytCli::CLI
       puts "Type in a number to get details of a specific movie."
       if input.to_i > 0 
         #movie_details method goes here.
-      elsif input = "exit"
+      elsif input == "exit"
         puts "bye!"
       end 
     end 
