@@ -23,6 +23,7 @@ class NytCli::CLI
     NytCli::Movie.all.each.with_index(1) do |movie, i|
       puts "#{i}. #{movie.title}."
     end 
+    menu
   end 
   
   #need movie details method for second level.
