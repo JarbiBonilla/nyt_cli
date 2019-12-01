@@ -12,7 +12,7 @@ class NytCli::API
       opening_date = movie["opening_date"]
       
       
-      NytCli::Movie
+      NytCli::Movie.new(title, critic, summary, link, opening_date)
       binding.pry
     end 
   end 
