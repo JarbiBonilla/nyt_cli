@@ -13,7 +13,7 @@ class NytCli::API
       
       
       NytCli::Movie.new(title, critic, summary, link, opening_date)
-      binding.pry
+      #binding.pry
     end 
   end 
 end
