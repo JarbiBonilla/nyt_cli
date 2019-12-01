@@ -1,6 +1,6 @@
 class NytCli::API 
   
-  def self.fetch
+  def fetch
     key = "zGJsaMilAlyHRpjXh4GrERgjsQ32doGS"
     url = "https://api.nytimes.com/svc/movies/v2/reviews/search.json?critics-pick=Y&api-key=#{key}"
     response = HTTParty.get(url)
