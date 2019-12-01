@@ -56,4 +56,8 @@ class NytCli::CLI
       puts "Opening date: #{movie.opening_date}"
     #end 
   end 
+  
+  def bye 
+    puts "\n See you later!!"
+  end 
 end
