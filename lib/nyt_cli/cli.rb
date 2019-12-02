@@ -6,6 +6,7 @@ class NytCli::CLI
     input = gets.strip.downcase
     
     if input == "y"
+      NytCli::API.new.fetch
       list 
     elsif input == "n"
       bye
@@ -17,13 +18,13 @@ class NytCli::CLI
   end 
   
   def list 
-    NytCli::API.new.fetch
+   # NytCli::API.new.fetch
       puts "\n Here are the list of movies!"
       sleep(1)
     NytCli::Movie.all.each.with_index(1) do |movie, i|
       puts "#{i}. #{movie.title}."
     end 
-    menu
+    #menu
   end 
   
   #need movie details method for second level.
