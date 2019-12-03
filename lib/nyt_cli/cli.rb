@@ -37,7 +37,7 @@ class NytCli::CLI
       puts "Type list to see the list of movies."
       puts "Type exit to leave the program."
       input = gets.strip.downcase
-      if input.to_i > 0 
+      if input.to_i > 0
         movie_details(input)
       elsif input == "list"
         list
