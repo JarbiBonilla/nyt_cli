@@ -1,9 +1,7 @@
-hello world
-# NytCli
+# For all you movie fans!
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/nyt_cli`. To experiment with that code, run `bin/console` for an interactive prompt.
+Welcome to my New York Times CLI Gem! You will be able to see the lastest movies and reviews picked by the critics' at the New York Times. You will also be able to see more information about the movies like their descriptions, opening dates, and a short summary.
 
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
@@ -23,7 +21,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+ - Type ruby bin/run in the terminal to start the program.
+ - After you will be greeted and asked if you would like to see the latest movies picked by New York Times movie critics'.
+          - At this point you will type "y" to see the list of movies or "n" to exit the program.
+ - You will be giving a list of movies.
+ - At this point you can:
+          - Choose a number to see the details of a movie.
+          - Choose "list" to see the movie list again.
+          - Choose "exit" to leave the program.
+ - Hope you enjoy using the CLI and are able to find a movie to see next time in theaters!      
 
 ## Development
 
