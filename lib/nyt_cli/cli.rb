@@ -39,12 +39,14 @@ class NytCli::CLI
       puts "Type exit to leave the program."
       puts "\n------------------------------------------------------------\n"
       input = gets.strip.downcase
-      if input.to_i > 0
+      if input.to_i > 0 && input.to_i < NytCli::Movie.all.size
         movie_details(input)
       elsif input == "list"
         list
       elsif input == "exit"
         bye
+      else 
+        puts "~~You must enter a valid number to proceed~~".red.bold
       end 
     end 
   end 
