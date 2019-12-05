@@ -10,7 +10,7 @@ class NytCli::API
       summary = movie["summary_short"]
       link = movie["link"]["url"]
       opening_date = movie["opening_date"]
-      
+      #binding.pry 
       
       NytCli::Movie.new(title, critic, summary, link, opening_date)
       #binding.pry

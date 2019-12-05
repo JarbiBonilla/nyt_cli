@@ -11,14 +11,15 @@ class NytCli::CLI
     elsif input == "n"
       bye
     else 
-      puts "This is not a valid option. Please choice one of the options."
+      puts "This is not a valid option. Please choice one of the options.".red.bold
+      puts "\n -----------------------------------------------------------\n"
       sleep(1)
       menu
     end 
   end 
   
   def list 
-      puts "\n Here are the list of movies!"
+      puts "\n ~~~~~~~Here are the list of movies!~~~~~~~~\n"
       sleep(1)
     NytCli::Movie.all.each.with_index(1) do |movie, i|
       puts "#{i}. #{movie.title}."
@@ -36,6 +37,7 @@ class NytCli::CLI
       puts "Type in a number to get details of a specific movie."
       puts "Type list to see the list of movies."
       puts "Type exit to leave the program."
+      puts "\n---------------------------------------------------\n"
       input = gets.strip.downcase
       if input.to_i > 0
         movie_details(input)

@@ -1,5 +1,6 @@
 require "pry"
 require "httparty"
+require "colorize"
 
 
 require_relative "nyt_cli/version"
