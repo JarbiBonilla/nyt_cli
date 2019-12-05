@@ -20,7 +20,7 @@ Or install it yourself as:
     $ gem install nyt_cli
 
 ## Usage
-
+ - Once you have cloned the repo from Github, you will need to cd into the CLI by typing cd nyt_cli/
  - Type ruby bin/run in the terminal to start the program.
  - After you will be greeted and asked if you would like to see the latest movies picked by New York Times movie critics'.
           - At this point you will type "y" to see the list of movies or "n" to exit the program.
