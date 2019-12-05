@@ -56,9 +56,10 @@ class NytCli::CLI
       puts "Short Summary of movie: #{movie.summary}"
       puts "Movie link: #{movie.link}"
       puts "Opening date: #{movie.opening_date}"
+      puts "\n------------------------------------------------------------\n"
   end 
   
   def bye 
-    puts "\n See you later!!"
+    puts "\n See you later!!".blue
   end 
 end
