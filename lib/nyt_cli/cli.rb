@@ -26,9 +26,6 @@ class NytCli::CLI
     end 
   end 
   
-  #need movie details method for second level.
-  #menu method.
-  
   def menu
     
     input = nil 
