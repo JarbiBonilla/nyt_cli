@@ -59,6 +59,6 @@ class NytCli::CLI
   end 
   
   def bye 
-    puts "\n See you later!!".blue
+    puts "\n See you later!!".blue.bold
   end 
 end
