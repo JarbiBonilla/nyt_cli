@@ -1,3 +1,5 @@
+require 'dotenv/load'
+
 class NytCli::API 
   
   def fetch

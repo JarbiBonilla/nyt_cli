@@ -8,6 +8,7 @@ GEM
   specs:
     coderay (1.1.2)
     colorize (0.8.1)
+    dotenv (2.7.5)
     httparty (0.17.1)
       mime-types (~> 3.0)
       multi_xml (>= 0.5.2)
@@ -27,6 +28,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 2.0)
   colorize
+  dotenv
   httparty
   nyt_cli!
   pry
